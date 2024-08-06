@@ -1,0 +1,50 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures the header stays above other content */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+/* Ensures that the content below the header doesn't overlap */
+body {
+    padding-top: 60px; /* Adjust this value according to header height */
+}
